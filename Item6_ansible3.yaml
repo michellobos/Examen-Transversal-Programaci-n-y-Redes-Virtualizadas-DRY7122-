@@ -1,0 +1,12 @@
+- hosts: webservers
+  become: yes
+
+  tasks:
+    - name: INSTALAR APACHE2
+      apt: name=apache2 update_cache=yes state=latest
+
+    - name: PUERTO 9999
+      lineinfile: path=/etc/apache2/ports.conf regexp='^Listen ' line='Listen 9999'
+
+    - name: REINICIAR APACHE2
+      service: name=apache2 state=restarted
