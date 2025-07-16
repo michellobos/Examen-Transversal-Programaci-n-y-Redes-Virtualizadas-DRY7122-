@@ -1,0 +1,17 @@
+---
+- name: SHOW RUN DEL ROUTER
+  hosts: cisco
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: EJECUTAR COMANDO SHOW RUNNING-CONFIG
+      ios_command:
+        commands:
+          - show running-config
+      register: resultado
+
+    - name: RESPALDO SHOW RUN
+      copy:
+        content: "{{ resultado.stdout[0] }}"
+        dest: "ansible_examen/show_run_examen.txt"
