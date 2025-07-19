@@ -1,3 +1,4 @@
+#vlan
 vlan = int(input("Ingresa numero de VLAN: "))
 
 if 1 <= vlan <= 1005:
