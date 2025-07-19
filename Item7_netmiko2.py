@@ -1,3 +1,4 @@
+#item7 interfaces
 from netmiko import ConnectHandler
 
 router = {
