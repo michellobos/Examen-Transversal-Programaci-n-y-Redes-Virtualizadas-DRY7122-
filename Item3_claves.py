@@ -1,3 +1,4 @@
+#item3 claves sha256
 import sqlite3
 import hashlib
 from flask import Flask, request
