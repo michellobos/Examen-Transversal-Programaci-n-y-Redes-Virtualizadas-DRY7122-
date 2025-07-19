@@ -1,3 +1,4 @@
+#hostname loopback
 from ncclient import manager
 import xml.dom.minidom
 

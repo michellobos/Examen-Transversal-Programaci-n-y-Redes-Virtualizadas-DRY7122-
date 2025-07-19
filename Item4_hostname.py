@@ -1,3 +1,4 @@
+#item4 hostname
 from ncclient import manager
 import xml.dom.minidom
 
