@@ -1,3 +1,4 @@
+#item7 show run
 from netmiko import ConnectHandler
 
 router = {

@@ -1,3 +1,4 @@
+#item7 EIGRP
 from netmiko import ConnectHandler
 
 ios_xe = {

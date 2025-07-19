@@ -1,3 +1,4 @@
+#item7 show version
 from netmiko import ConnectHandler
 
 router = {
