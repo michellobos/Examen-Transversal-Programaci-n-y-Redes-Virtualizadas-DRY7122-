@@ -1,4 +1,3 @@
-#nombre
 print("Michel Lobos")
 print("Oscar Gonzales")
 print("Daniel Prado")
