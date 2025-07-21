@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 3611 bytes
+Current configuration : 3443 bytes
 !
-! Last configuration change at 18:43:17 UTC Mon Jul 21 2025 by cisco
+! Last configuration change at 21:33:10 UTC Mon Jul 21 2025
 !
 version 16.9
 service timestamps debug datetime msec
@@ -135,16 +135,6 @@ interface GigabitEthernet1
  negotiation auto
  no mop enabled
  no mop sysid
-!
-!
-router eigrp EXAMEN
- !
- address-family ipv4 unicast autonomous-system 7
-  !
-  topology base
-  exit-af-topology
-  network 192.168.56.0
- exit-address-family
 !
 ip forward-protocol nd
 no ip http server
